@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YukiDaemon", "YukiDaemon\YukiDaemon.csproj", "{B67B2505-47DB-4DC0-9C61-037BE29359B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YukiDaemon", "YukiDaemon\YukiDaemon.csproj", "{B67B2505-47DB-4DC0-9C61-037BE29359B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{E3D9B17A-D252-4116-82F7-B66539BFEC05}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
