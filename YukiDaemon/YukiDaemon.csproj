@@ -8,6 +8,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<ForceDesignerDPIUnaware>true</ForceDesignerDPIUnaware>
 		<ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+		<Version>1.0.1</Version>
+		<Authors>Yuki Nagato</Authors>
+		<Title>Yuki Daemon</Title>
+		<Product>Yuki Daemon</Product>
 	</PropertyGroup>
 
 	<ItemGroup>
