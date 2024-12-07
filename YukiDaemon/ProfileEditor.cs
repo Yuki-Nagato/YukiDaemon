@@ -273,5 +273,23 @@ namespace YukiDaemon {
             CreateNoWindowCheckBox.Enabled = !UseShellExecuteCheckBox.Checked;
             StandardStreamsButton.Enabled = !UseShellExecuteCheckBox.Checked;
         }
+
+        private void FileNameSelectButton_Click(object sender, EventArgs e) {
+            if (FileNameOpenFileDialog.ShowDialog() != DialogResult.OK) {
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(WorkingDirectoryTextBox.Text) || WorkingDirectoryTextBox.Text == Path.GetDirectoryName(FileNameTextBox.Text)) {
+                WorkingDirectoryTextBox.Text = Path.GetDirectoryName(FileNameOpenFileDialog.FileName);
+                WorkingDirectoryFolderBrowserDialog.SelectedPath = Path.GetDirectoryName(FileNameOpenFileDialog.FileName);
+            }
+            FileNameTextBox.Text = FileNameOpenFileDialog.FileName;
+        }
+
+        private void WorkingDirectoryBrowseButton_Click(object sender, EventArgs e) {
+            if (WorkingDirectoryFolderBrowserDialog.ShowDialog() != DialogResult.OK) {
+                return;
+            }
+            WorkingDirectoryTextBox.Text = WorkingDirectoryFolderBrowserDialog.SelectedPath;
+        }
     }
 }

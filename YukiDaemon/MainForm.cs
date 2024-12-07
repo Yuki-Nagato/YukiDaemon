@@ -102,6 +102,9 @@ namespace YukiDaemon {
         }
 
         private void DeleteProfileButton_Click(object sender, EventArgs e) {
+            if (MessageBox.Show("Delete " + ProfilesDataGridView.SelectedRows.Count + " profiles?", "Delete Profiles - Yuki Daemon", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) != DialogResult.OK) {
+                return;
+            }
             foreach (DataGridViewRow row in ProfilesDataGridView.SelectedRows) {
                 ProfileEditor profileEditor = (ProfileEditor)row.DataBoundItem;
                 profileEditor.Dispose();

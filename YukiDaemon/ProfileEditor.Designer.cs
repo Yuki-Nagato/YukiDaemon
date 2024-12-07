@@ -184,6 +184,7 @@
             FileNameSelectButton.TabIndex = 4;
             FileNameSelectButton.Text = "Select...";
             FileNameSelectButton.UseVisualStyleBackColor = true;
+            FileNameSelectButton.Click += FileNameSelectButton_Click;
             // 
             // label4
             // 
@@ -217,6 +218,7 @@
             WorkingDirectoryBrowseButton.TabIndex = 9;
             WorkingDirectoryBrowseButton.Text = "Browse...";
             WorkingDirectoryBrowseButton.UseVisualStyleBackColor = true;
+            WorkingDirectoryBrowseButton.Click += WorkingDirectoryBrowseButton_Click;
             // 
             // label5
             // 
